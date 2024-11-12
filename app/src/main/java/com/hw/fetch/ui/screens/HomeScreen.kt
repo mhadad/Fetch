@@ -1,12 +1,9 @@
 package com.hw.fetch.ui.screens
 
 import android.annotation.SuppressLint
-import android.widget.ProgressBar
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.frames.observeAllReads
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.CircularWavyProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
@@ -15,20 +12,20 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.hilt.navigation.compose.hiltViewModel
-import com.hw.fetch.data.models.UiStatesModel
-import com.hw.fetch.domain.view_models.HomeScreenViewModel
-import com.hw.fetch.ui.composables.HomeScreenList
-import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTagsAsResourceId
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.hw.fetch.data.models.UiStatesModel
+import com.hw.fetch.domain.view_models.HomeScreenViewModel
 import com.hw.fetch.ui.composables.HomeScreenExpandableList
+import com.hw.fetch.ui.composables.HomeScreenList
 import com.hw.fetch.ui.composables.HomeScreenTopAppBar
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
